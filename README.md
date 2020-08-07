@@ -3,7 +3,7 @@
 Make changes in the scr folder only. These are compiled into the dist folder, the land of evil.
 
 Before starting work on your end, use 
-git pull : to get all online changes
+* git pull : to get all online changes
 
 * git status : tells you which files you changes
 * git add : please add all the files that you changed
