@@ -62,3 +62,58 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@font-face{ font-family: "PratiwiSansTypeface"; src: url("../fonts/PratiwiSansTypeface.eot"); src: url("../fonts/PratiwiSansTypeface.eot?#iefix") format("embedded-opentype"), url("../fonts/PratiwiSansTypeface.woff") format("woff"), url("../fonts/PratiwiSansTypeface.ttf") format("truetype"), url("../fonts/PratiwiSansTypeface.svg#webfont") format("svg"); }
+
+$melt-green: #5ad75a;
+
+body {
+
+font-family: PratiwiSansTypeface;
+
+#egg2 {
+    display: block;
+    width: 140px;
+    height: 180px;
+    background-color: $melt-green;
+    transform: rotate(-70deg);
+    border-radius: 50% 50% 50% 50% / 10% 60% 40% 30%;
+}
+
+#tv {
+    text-align: center;
+    text-indent: .1em;
+
+    display: block;
+    width: 150px;
+    height: 180px;
+    background-color: #46d260;
+    border-radius: 80% 50% 50% 90% / 60% 20% 40% 30%;
+  }
+
+#egg {
+    display: block;
+    width: 126px;
+    height: 180px;
+    background-color: $melt-green;
+    transform: rotate(20deg);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+
+
+
+.menu a {
+    margin-top: 4px;
+    color: black;
+    transform: rotate(10deg);
+
+     &:hover {
+       color: $melt-green;
+       //transition: color 0.2s ease-in;
+     }
+
+}
+
+
+}
