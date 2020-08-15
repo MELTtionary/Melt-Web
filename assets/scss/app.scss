@@ -76,25 +76,25 @@ $col2: #5ad75a;
 
 body {
 
-font-family: PratiwiSansTypeface;
-font-size: 16px;
-
-h1, h2, h3 {
     font-family: PratiwiSansTypeface;
-}
+    font-size: 16px;
 
-p, ul, li, a {
+    h1, h2, h3 {
+    font-family: PratiwiSansTypeface;
+    }
+
+    p, ul, li, a {
     color:#444744;
-}
+    }
 
 
 /* -- SLIME MENU -- */
-.menu-slime {
+    .menu-slime {
     margin-left: 2em;
-  }
+    }
   
 
-#egg2 {
+    #egg2 {
     display: block;
     width: 140px;
     height: 180px;
@@ -103,9 +103,9 @@ p, ul, li, a {
     transform: rotate(-70deg);
     border-radius: 50% 50% 50% 50% / 10% 60% 40% 30%;
     transition: all 0.5s ease-in-out;
-}
+    }
 
-#tv {
+    #tv {
     text-align: center;
     //text-indent: .1em;
 
@@ -117,9 +117,9 @@ p, ul, li, a {
     animation: morph 8s ease-in-out infinite;
     border-radius: 80% 50% 50% 90% / 60% 20% 40% 30%;
     transition: all 1s ease-in-out;
-  }
+    }
 
-#egg {
+    #egg {
     display: block;
     width: 126px;
     height: 180px;
@@ -129,10 +129,10 @@ p, ul, li, a {
     animation: morph 8s ease-in-out infinite;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     transition: all 2s ease-in-out;
-}
+    }
 
 
-.menu a {
+    .menu a {
     margin-top: 4px;
     color: #ac609b;
     transform: rotate(30deg);
@@ -140,50 +140,45 @@ p, ul, li, a {
      &:hover {
        color: $melt-green;
      }
-
-}
+    }
 
 /* -- END SLIME MENU -- */
 
-.content {
+    .content {
     margin-top: 2em;
-}
+    }
 
-.ingredients {
+    .ingredients {
     margin-top: 4em;
     margin-bottom: 5em; 
-}
+    }
 
-.meltry {
+    .meltry {
 
-    img {
+        img {
         margin-top: 1em;
-    }
-
-    .x-ercise {
-        margin-top: 3em;
-    }
-
-
-}
-
-.meltry-preview {
-
-    
-    
-   .blob-wrapper {
-        padding-left: 1em;
-        margin-top: 3em;
-
-        @include slime-movement(red, yellow, 8s, 250px);
-        h1 { font-size: 9em; }
-        text {
-            font-size: 3em;
         }
-        
-    
 
-    
+        .x-ercise {
+        margin-top: 3em;
+        }
+    }   
+
+    .meltry-preview {
+
+
+        .blob-wrapper {
+            padding-left: 1em;
+            margin-top: 3em;
+
+            @include slime-movement(red, yellow, 8s, 250px);
+            h1 { font-size: 9em; }
+            text {
+                font-size: 3em;
+            }
+        }
+    }
+
 
     #W {
         @include slime-movement(blue, pink, 8s, 200px);
@@ -215,24 +210,20 @@ p, ul, li, a {
         h1 { color: rgb(216, 183, 123); }
     }
 
-    #M{
+    #M {
         @include slime-movement(rgb(42, 117, 86), rgb(194, 0, 0), 8s, 250px);
         h1 { color: rgb(42, 117, 86); }
     }
 
-    #U{
+    #U {
         @include slime-movement(rgb(35, 19, 105), rgb(255, 218, 8), 8s, 190px);
         h1 { color: rgb(35, 19, 105); }
     }
 
-    #L{
-        @include slime-movement(rgb(255, 251, 0), rgb(151, 42, 60), 8s, 210px);
+    #L {
+        @include slime-movement(rgb(245, 32, 96), rgb(151, 42, 60), 8s, 210px);
         h1 { color: rgb(255, 251, 0); }
     }
-
-}
-
-}
 }
 
 
