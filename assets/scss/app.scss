@@ -3,6 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'mixins';
 
 // Global styles
 @include foundation-global-styles;
@@ -67,6 +68,12 @@
 
 $melt-green: #5ad75a;
 
+
+
+$col1: #bcdf3d;
+$col2: #5ad75a;
+
+
 body {
 
 font-family: PratiwiSansTypeface;
@@ -76,30 +83,40 @@ h1, h2, h3 {
     font-family: PratiwiSansTypeface;
 }
 
+p, ul, li, a {
+    color:#444744;
+}
+
 
 /* -- SLIME MENU -- */
-.slime {
+.menu-slime {
     margin-left: 2em;
-}
+  }
+  
 
 #egg2 {
     display: block;
     width: 140px;
     height: 180px;
-    background-color: $melt-green;
+    background: linear-gradient(45deg, $col1 0%, $col2 100%);
+    animation: morph 8s ease-in-out infinite;
     transform: rotate(-70deg);
     border-radius: 50% 50% 50% 50% / 10% 60% 40% 30%;
+    transition: all 0.5s ease-in-out;
 }
 
 #tv {
     text-align: center;
-    text-indent: .1em;
+    //text-indent: .1em;
 
     display: block;
     width: 150px;
     height: 180px;
     background-color: #46d260;
+    background: linear-gradient(45deg, $col1 0%, $col2 100%);
+    animation: morph 8s ease-in-out infinite;
     border-radius: 80% 50% 50% 90% / 60% 20% 40% 30%;
+    transition: all 1s ease-in-out;
   }
 
 #egg {
@@ -107,18 +124,21 @@ h1, h2, h3 {
     width: 126px;
     height: 180px;
     background-color: $melt-green;
+    background: linear-gradient(45deg, $col1 0%, $col2 100%);
     transform: rotate(20deg);
+    animation: morph 8s ease-in-out infinite;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transition: all 2s ease-in-out;
 }
+
 
 .menu a {
     margin-top: 4px;
-    color: black;
-    transform: rotate(10deg);
+    color: #ac609b;
+    transform: rotate(30deg);
 
      &:hover {
        color: $melt-green;
-       //transition: color 0.2s ease-in;
      }
 
 }
@@ -134,5 +154,88 @@ h1, h2, h3 {
     margin-bottom: 5em; 
 }
 
+.meltry {
+
+    img {
+        margin-top: 1em;
+    }
+
+    .x-ercise {
+        margin-top: 3em;
+    }
+
 
 }
+
+.meltry-preview {
+
+    
+    
+   .blob-wrapper {
+        padding-left: 1em;
+        margin-top: 3em;
+
+        @include slime-movement(red, yellow, 8s, 250px);
+        h1 { font-size: 9em; }
+        text {
+            font-size: 3em;
+        }
+        
+    
+
+    
+
+    #W {
+        @include slime-movement(blue, pink, 8s, 200px);
+        h1 a { color: blue; }
+    }
+
+    #A {
+        @include slime-movement(violet, lime, 8s, 280px);
+        h1 { color: violet; }
+    }
+
+    #G{
+        @include slime-movement(orange, pink, 8s, 240px);
+        h1 { color: orange; }
+    }
+
+    #P{
+        @include slime-movement(rgb(53, 97, 76), rgb(231, 0, 154), 8s, 140px);
+        h1 { color: rgb(53, 97, 76); }
+    }
+
+    #J{
+        @include slime-movement(rgb(78, 21, 54), rgb(28, 187, 147), 8s, 260px);
+        h1 { color: rgb(78, 21, 54); }
+    }
+
+    #Z {
+        @include slime-movement(rgb(216, 183, 123), rgb(75, 44, 49), 8s, 180px);
+        h1 { color: rgb(216, 183, 123); }
+    }
+
+    #M{
+        @include slime-movement(rgb(42, 117, 86), rgb(194, 0, 0), 8s, 250px);
+        h1 { color: rgb(42, 117, 86); }
+    }
+
+    #U{
+        @include slime-movement(rgb(35, 19, 105), rgb(255, 218, 8), 8s, 190px);
+        h1 { color: rgb(35, 19, 105); }
+    }
+
+    #L{
+        @include slime-movement(rgb(255, 251, 0), rgb(151, 42, 60), 8s, 210px);
+        h1 { color: rgb(255, 251, 0); }
+    }
+
+}
+
+}
+}
+
+
+
+
+
