@@ -87,6 +87,11 @@ body {
     color:#444744;
     }
 
+    p a {
+        background: black;
+        color: white;
+    }
+
 
 /* -- SLIME MENU -- */
     .menu-slime {
@@ -153,14 +158,38 @@ body {
     margin-bottom: 5em; 
     }
 
+    .element {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
     .meltry {
+        margin-bottom: 5em;
+
+        p a {
+            background: black;
+            color: white;
+        }
 
         img {
-        margin-top: 1em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
         }
 
         .x-ercise {
-        margin-top: 3em;
+        margin-top: 5em;
+        }
+
+        h3 {
+            margin-top: 1.5em;
+        }
+
+        iframe {
+            margin-top: 3em;
+        }
+
+        .manifesto {
+            li p {font-size: 1.5em;}
         }
     }   
 
@@ -182,15 +211,15 @@ body {
 
     #W {
         @include slime-movement(blue, pink, 8s, 200px);
-        h1 a { color: blue; }
+        h1 { color: blue; }
     }
 
-    #A {
+    #U {
         @include slime-movement(violet, lime, 8s, 280px);
-        h1 { color: violet; }
+        h1 { color: black; }
     }
 
-    #G{
+    #R{
         @include slime-movement(orange, pink, 8s, 240px);
         h1 { color: orange; }
     }
@@ -200,30 +229,32 @@ body {
         h1 { color: rgb(53, 97, 76); }
     }
 
-    #J{
+    #H{
         @include slime-movement(rgb(78, 21, 54), rgb(28, 187, 147), 8s, 260px);
         h1 { color: rgb(78, 21, 54); }
     }
 
-    #Z {
+    #S {
         @include slime-movement(rgb(216, 183, 123), rgb(75, 44, 49), 8s, 180px);
-        h1 { color: rgb(216, 183, 123); }
+        h1 { color: black; }
     }
 
-    #M {
+    #M{
         @include slime-movement(rgb(42, 117, 86), rgb(194, 0, 0), 8s, 250px);
         h1 { color: rgb(42, 117, 86); }
     }
 
-    #U {
+    #B {
         @include slime-movement(rgb(35, 19, 105), rgb(255, 218, 8), 8s, 190px);
         h1 { color: rgb(35, 19, 105); }
     }
 
     #L {
         @include slime-movement(rgb(245, 32, 96), rgb(151, 42, 60), 8s, 210px);
-        h1 { color: rgb(255, 251, 0); }
+        h1 { color: black; }
     }
+
+
 }
 
 
