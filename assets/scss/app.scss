@@ -79,7 +79,7 @@ body {
     font-family: PratiwiSansTypeface;
     font-size: 16px;
 
-    h1, h2, h3 {
+    h1, h2, h3, h4, h5 {
     font-family: PratiwiSansTypeface;
     }
 
@@ -166,7 +166,7 @@ body {
     .meltry {
         margin-bottom: 5em;
 
-        p a {
+        p a, h4 a {
             background: black;
             color: white;
         }
@@ -180,7 +180,7 @@ body {
         margin-top: 5em;
         }
 
-        h3 {
+        h3, h4 {
             margin-top: 1.5em;
         }
 
