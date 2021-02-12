@@ -145,6 +145,12 @@ body {
      &:hover {
        color: $melt-green;
      }
+
+     &:active {
+         color: black;
+     }
+
+    
     }
 
 /* -- END SLIME MENU -- */
