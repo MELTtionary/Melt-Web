@@ -95,6 +95,10 @@ body {
         color: white;
     }
 
+    p {
+        font-size: 18px;
+    }
+
 
 /* -- SLIME MENU -- */
     .menu-slime {
@@ -288,6 +292,26 @@ body {
     #C {
         @include slime-movement(rgb(245, 32, 96), rgb(151, 42, 60), 8s, 210px);
         h1 { color: sandybrown; }
+    }
+
+    #I {
+        @include slime-movement(rgb(88, 79, 218), rgb(214, 146, 67), 8s, 210px);
+        h1 { color: rgb(233, 154, 184); }
+    }
+
+    #U {
+        @include slime-movement(rgb(251, 255, 29), rgb(18, 182, 246), 8s, 210px);
+        h1 { color: rgb(117, 12, 21); }
+    }
+
+    #N {
+        @include slime-movement(rgb(23, 20, 77), rgb(83, 245, 61), 8s, 210px);
+        h1 { color: rgb(255, 252, 50); }
+    }
+
+    #ex {
+        @include slime-movement(rgb(235, 104, 132), rgb(61, 156, 245), 8s, 210px);
+        h1 { color: rgb(255, 255, 241); }
     }
 
 
