@@ -271,7 +271,7 @@ body {
 
     #H{
         @include slime-movement(rgb(78, 21, 54), rgb(28, 187, 147), 8s, 260px);
-        h1 { color: rgb(78, 21, 54); }
+        h1 { color: rgb(96, 234, 37); }
     }
 
     #S {
@@ -290,7 +290,7 @@ body {
     }
 
     #C {
-        @include slime-movement(rgb(245, 32, 96), rgb(151, 42, 60), 8s, 210px);
+        @include slime-movement(rgb(245, 32, 96), rgb(42, 151, 89), 8s, 210px);
         h1 { color: sandybrown; }
     }
 
@@ -310,7 +310,7 @@ body {
     }
 
     #ex {
-        @include slime-movement(rgb(235, 104, 132), rgb(61, 156, 245), 8s, 210px);
+        @include slime-movement(rgb(240, 131, 71), rgb(28, 92, 114), 8s, 210px);
         h1 { color: rgb(255, 255, 241); }
     }
 
