@@ -97,14 +97,23 @@ body {
     }
 }
 
+.landingpage {
+    background-color: #ee65ee;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.4;
+
+    .welcome {
+        margin-top: 28vh;
+    }
+}
 
 /*--- MELTIONARY PROJECTS ---*/
 
 /* -- SLIME MENU -- */
     .menu-slime {
     margin-left: 2em;
-    }
-  
+
     #egg2 {
     display: block;
     width: 140px;
@@ -118,8 +127,6 @@ body {
 
     #tv {
     text-align: center;
-    //text-indent: .1em;
-
     display: block;
     width: 150px;
     height: 180px;
@@ -142,11 +149,10 @@ body {
     transition: all 2s ease-in-out;
     }
 
-
     .menu a {
-    margin-top: 4px;
+    margin-top: 12px;
     color: #ac609b;
-    transform: rotate(25deg);
+    transform: rotate(35deg);
     font-family: PratiwiSansTypeface;
 
      &:hover {
@@ -157,6 +163,7 @@ body {
          color: black;
      }
     }
+}
 /* -- END SLIME MENU -- */
 
     .content {
