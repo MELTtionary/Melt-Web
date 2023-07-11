@@ -67,10 +67,8 @@
 @font-face{ font-family: "PratiwiSansTypeface"; src: url("../fonts/PratiwiSansTypeface.eot"); src: url("../fonts/PratiwiSansTypeface.eot?#iefix") format("embedded-opentype"), url("../fonts/PratiwiSansTypeface.woff") format("woff"), url("../fonts/PratiwiSansTypeface.ttf") format("truetype"), url("../fonts/PratiwiSansTypeface.svg#webfont") format("svg"); }
 @font-face{ font-family: "Atkinson-Hyperlegible"; src: url("../fonts/Atkinson-Hyperlegible-Regular-102.eot"); src: url("../fonts/Atkinson-Hyperlegible-Regular-102.eot?#iefix") format("embedded-opentype"), url("../fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff"), url("../fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype"), url("../fonts/Atkinson-Hyperlegible-Regular-102.svg#webfont") format("svg"); }
 
+// Colors
 $melt-green: #5ad75a;
-
-
-
 $col1: #bcdf3d;
 $col2: #5ad75a;
 
@@ -89,7 +87,6 @@ body {
     font-family: Atkinson-Hyperlegible;
     }
 
-
     p a {
         background: black;
         color: white;
@@ -98,14 +95,16 @@ body {
     p {
         font-size: 18px;
     }
+}
 
+
+/*--- MELTIONARY PROJECTS ---*/
 
 /* -- SLIME MENU -- */
     .menu-slime {
     margin-left: 2em;
     }
   
-
     #egg2 {
     display: block;
     width: 140px;
@@ -147,10 +146,9 @@ body {
     .menu a {
     margin-top: 4px;
     color: #ac609b;
-    transform: rotate(30deg);
+    transform: rotate(25deg);
     font-family: PratiwiSansTypeface;
 
-    
      &:hover {
        color: $melt-green;
      }
@@ -158,17 +156,14 @@ body {
      &:active {
          color: black;
      }
-
-    
     }
-
 /* -- END SLIME MENU -- */
 
     .content {
     margin-top: 2em;
     }
 
-    .hidden {
+    .hidden { /* used for access to video descriptions */
         position: absolute;
         left:     -10000px;
         top:      auto;
@@ -194,14 +189,14 @@ body {
             font-family: Atkinson-Hyperlegible;
         }
 
-        p a, h3 a, h4 a {
+        p a, h3 a, h4 a, li a {
             background: black;
-            color: #5ad75a;
+            color: $col2;
         }
 
         h2, h3 {
             margin-top: 1.6em;  
-            color: #5ad75a;
+            color: $col2;
         }
 
         img {
@@ -219,7 +214,7 @@ body {
 
         .report {
             margin-bottom: 6em;
-            h4, h4 a {color: #5ad75a;}
+            h4, h4 a {color: $col2;}
            
         }
         iframe {
@@ -232,8 +227,6 @@ body {
     }   
 
     .meltry-preview {
-
-
         .blob-wrapper {
             padding-left: 1em;
             margin-top: 3em;
@@ -243,91 +236,39 @@ body {
             text {
                 font-size: 3em;
                 font-family: PratiwiSansTypeface; 
-
             }
         }
     }
 
+/* Blob Colors & Movements for Meltry Previews */
+    #W { @include slime-movement(blue, pink, 8s, 200px); h1 { color: blue; }}
+    #A { @include slime-movement(violet, lime, 8s, 280px); h1 { color: #e541e5; }}
+    #R { @include slime-movement(orange, pink, 8s, 240px); h1 { color: orange; }}
+    #P { @include slime-movement(rgb(53, 97, 76), rgb(231, 0, 154), 8s, 140px); h1 { color: rgb(53, 97, 76); }}
+    #H { @include slime-movement(rgb(78, 21, 54), rgb(28, 187, 147), 8s, 260px); h1 { color: rgb(96, 234, 37); }}
+    #S { @include slime-movement(rgb(216, 183, 123), rgb(75, 44, 49), 8s, 180px); h1 { color: rgb(247, 32, 17); }}
+    #M { @include slime-movement(rgb(42, 117, 86), rgb(194, 0, 0), 8s, 250px); h1 { color: rgb(42, 117, 86); }}
+    #B { @include slime-movement(rgb(35, 19, 105), rgb(255, 218, 8), 8s, 190px); h1 { color: rgb(35, 19, 105); }}
+    #C { @include slime-movement(rgb(245, 32, 96), rgb(42, 151, 89), 8s, 210px); h1 { color: sandybrown; }}
+    #I { @include slime-movement(rgb(88, 79, 218), rgb(214, 146, 67), 8s, 210px); h1 { color: rgb(233, 154, 184); }}
+    #U { @include slime-movement(rgb(251, 255, 29), rgb(18, 182, 246), 8s, 210px); h1 { color: rgb(117, 12, 21); }}
+    #N { @include slime-movement(rgb(23, 20, 77), rgb(83, 245, 61), 8s, 210px); h1 { color: rgb(255, 252, 50); }}
+    #ex { @include slime-movement(rgb(240, 131, 71), rgb(28, 92, 114), 8s, 210px); h1 { color: rgb(255, 255, 241); }}
 
-    #W {
-        @include slime-movement(blue, pink, 8s, 200px);
-        h1 { color: blue; }
-    }
-
-    #A {
-        @include slime-movement(violet, lime, 8s, 280px);
-        h1 { color: #e541e5; }
-    }
-
-    #R{
-        @include slime-movement(orange, pink, 8s, 240px);
-        h1 { color: orange; }
-    }
-
-    #P{
-        @include slime-movement(rgb(53, 97, 76), rgb(231, 0, 154), 8s, 140px);
-        h1 { color: rgb(53, 97, 76); }
-    }
-
-    #H{
-        @include slime-movement(rgb(78, 21, 54), rgb(28, 187, 147), 8s, 260px);
-        h1 { color: rgb(96, 234, 37); }
-    }
-
-    #S {
-        @include slime-movement(rgb(216, 183, 123), rgb(75, 44, 49), 8s, 180px);
-        h1 { color: rgb(247, 32, 17); }
-    }
-
-    #M{
-        @include slime-movement(rgb(42, 117, 86), rgb(194, 0, 0), 8s, 250px);
-        h1 { color: rgb(42, 117, 86); }
-    }
-
-    #B {
-        @include slime-movement(rgb(35, 19, 105), rgb(255, 218, 8), 8s, 190px);
-        h1 { color: rgb(35, 19, 105); }
-    }
-
-    #C {
-        @include slime-movement(rgb(245, 32, 96), rgb(42, 151, 89), 8s, 210px);
-        h1 { color: sandybrown; }
-    }
-
-    #I {
-        @include slime-movement(rgb(88, 79, 218), rgb(214, 146, 67), 8s, 210px);
-        h1 { color: rgb(233, 154, 184); }
-    }
-
-    #U {
-        @include slime-movement(rgb(251, 255, 29), rgb(18, 182, 246), 8s, 210px);
-        h1 { color: rgb(117, 12, 21); }
-    }
-
-    #N {
-        @include slime-movement(rgb(23, 20, 77), rgb(83, 245, 61), 8s, 210px);
-        h1 { color: rgb(255, 252, 50); }
-    }
-
-    #ex {
-        @include slime-movement(rgb(240, 131, 71), rgb(28, 92, 114), 8s, 210px);
-        h1 { color: rgb(255, 255, 241); }
+    #cs {
+        h1 {color: black;}
     }
 
 
-
-
-
+/* Hacking Concrete Sub Page */
 .hacking-concrete {
     position: relative;
     text-align: left;
     background: Wheat;
     
-
     h1, p {
         color: Wheat;
         background: black;
-        
     }
 
     p { font-family: Atkinson-Hyperlegible; padding-left: 0.3em; font-size: 1.2em;}
@@ -335,16 +276,11 @@ body {
     #vid-description {background: none; color: black;}
 
     a { text-decoration: underline; color: orangered; background: black; }
-
-    
+   
     // HACKING CONCRETE 
     .back img {
             opacity: 0.8;
             animation: morph 40s ease-in-out infinite;
-    }
-
-    .back-fs img {
-        
     }
 
     .back video { 
@@ -356,14 +292,12 @@ body {
     .concrete {
         position: absolute;
         top: 40%;
-
         margin-left: 5em;
     }
 
     .churning {
         position: absolute;
         top: 60%;
-
         margin-left: 5em;
     }
 
@@ -379,8 +313,6 @@ body {
         p {margin-top: 7em; margin-left: -3em;}
     }
 
-  
-
     .intro {
         background-color: black;
         margin-top: -0.3em;
@@ -393,8 +325,7 @@ body {
     }
 
     #concrete {
-        color: Wheat;;
-       
+        color: Wheat;
     }
 
     .decomposing, .patching, .sprouting {
@@ -465,7 +396,6 @@ body {
         top: 45%;
         margin-left: 20em;
         @media only screen and (max-width: 600px) { margin-left: 5em; }
-
     }
 
     .hidden {
@@ -476,13 +406,10 @@ body {
         height:   1px;
         overflow: hidden;
       }
-
-
 }
 
 
 
-}
 
 
 
