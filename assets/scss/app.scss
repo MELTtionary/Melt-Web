@@ -80,6 +80,7 @@ body {
 
     h1, h2, h3, h4, h5 {
     font-family: PratiwiSansTypeface;
+    margin-top: 2em;
     }
 
     p, ul, li, a {
@@ -88,23 +89,28 @@ body {
     }
 
     p a {
-        background: black;
-        color: white;
+        text-decoration: underline;
+        color: darkblue;
     }
 
     p {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    h2 a {
+        font-family: PratiwiSansTypeface;
+        font-size: 0.6em;
     }
 }
 
 .landingpage {
-    background-color: #ee65ee;
     height: 100vh;
     width: 100vw;
-    opacity: 0.4;
+    opacity: 0.8;
 
     .welcome {
-        margin-top: 28vh;
+        margin-top: 14vh;
     }
 }
 .menu {
@@ -116,7 +122,8 @@ body {
 }
 
 .project {
-    margin-top: 12em;
+    margin-top: 6em;
+    img {margin-top:1em; margin-bottom:1em;}
 }
 
 /*--- MELTIONARY PROJECTS ---*/
@@ -177,9 +184,7 @@ body {
 }
 /* -- END SLIME MENU -- */
 
-    .content {
-    margin-top: 2em;
-    }
+    
 
     .hidden { /* used for access to video descriptions */
         position: absolute;
