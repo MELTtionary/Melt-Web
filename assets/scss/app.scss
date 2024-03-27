@@ -128,63 +128,6 @@ body {
 
 /*--- MELTIONARY PROJECTS ---*/
 
-/* -- SLIME MENU -- */
-    .menu-slime {
-    margin-left: 2em;
-
-    #egg2 {
-    display: block;
-    width: 140px;
-    height: 180px;
-    background: linear-gradient(45deg, $col1 0%, $col2 100%);
-    animation: morph 8s ease-in-out infinite;
-    transform: rotate(-70deg);
-    border-radius: 50% 50% 50% 50% / 10% 60% 40% 30%;
-    transition: all 0.5s ease-in-out;
-    }
-
-    #tv {
-    text-align: center;
-    display: block;
-    width: 150px;
-    height: 180px;
-    background-color: #46d260;
-    background: linear-gradient(45deg, $col1 0%, $col2 100%);
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 80% 50% 50% 90% / 60% 20% 40% 30%;
-    transition: all 1s ease-in-out;
-    }
-
-    #egg {
-    display: block;
-    width: 126px;
-    height: 180px;
-    background-color: $melt-green;
-    background: linear-gradient(45deg, $col1 0%, $col2 100%);
-    transform: rotate(20deg);
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    transition: all 2s ease-in-out;
-    }
-
-    .menu a {
-    margin-top: 12px;
-    color: #ac609b;
-    transform: rotate(35deg);
-    font-family: PratiwiSansTypeface;
-
-     &:hover {
-       color: $melt-green;
-     }
-
-     &:active {
-         color: black;
-     }
-    }
-}
-/* -- END SLIME MENU -- */
-
-    
 
     .hidden { /* used for access to video descriptions */
         position: absolute;
